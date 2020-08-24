@@ -1,9 +1,7 @@
 {% extends "layout.njk" %}
 
     {%block head%}
-        <head>
-            <link rel="stylesheet" href="/receita.css">
-        </head>    
+
     {% endblock %}
 
     {% block content %}
@@ -11,7 +9,7 @@
             
             <div class="receita">
 
-                <div class="imgReceita" id="burger">
+                <div class="imgReceita" id="{{receita.title}}">
                     <img src="{{receita.image}}" alt="Imagem {{receita.title}}">
                 </div>
     

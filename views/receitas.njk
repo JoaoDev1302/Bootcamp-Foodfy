@@ -1,9 +1,7 @@
 {% extends "layout.njk" %}
 
 {%block head%}
-    <head>
-        <link rel="stylesheet" href="/receitas.css">
-    </head>    
+       
 {% endblock %}
 
 {% block content %}
@@ -11,7 +9,7 @@
         {% for item in items %}
             <div class="receita" id="{{loop.index0}}">
 
-                <div class="imgReceita" id="burger">
+                <div class="imgReceitas" id="burger">
                     <img src="{{item.image}}" alt="Burger">
                 </div>
     
@@ -42,6 +40,6 @@
 {% endblock %}
 
 {% block script%}
-    <script src="/receitas.js"></script>
+    <script src="/scripts.js"></script>
 {% endblock %}
     
